@@ -1,14 +1,14 @@
 """
 Simple Rock, Paper, Scissors game using the random library
 """
-import random 
+import random
 
 options = ("rock", "paper", "scissors")
 running = True
 
 while running:
 
-    user_choice = None 
+    user_choice = None
     computer = random.choice(options)
 
     while user_choice not in options:
@@ -32,13 +32,11 @@ while running:
     else:
         print("You lose")
 
-    #Adding a play again option for users to play more 
+    #Adding a play again option for users to play more
     play_again = input("Play again? (y): ").lower()
 
     if play_again == "y":
         running = True
     else:
         print("Thanks for playing!")
-        quit()
-
-
+        exit()
